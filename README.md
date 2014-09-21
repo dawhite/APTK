@@ -1,7 +1,7 @@
 APTK
 ====
 
-The ASTER Data Preprocessing Toolkit plugin for ENVI is designed to mitigate multiple issues with how ASTER data are stored, processed, and used by geospatial software packages. It is superior to the processing options available natively in ENVI. The output from an APTK processing run is a new set of ENVI-formatted files, which is consistent with other third party EOS plugins for ENVI (MCTK, EPOC, VCTK, and Hyperion Tools). It currently supports Level 1A and Level 1B HDF files.
+The ASTER Preprocessing Toolkit plugin for ENVI is designed to mitigate multiple issues with how ASTER data are stored, processed, and used by geospatial software packages. It is superior to the processing options available natively in ENVI. The output from an APTK processing run is a new set of ENVI-formatted files, which is consistent with other third party EOS plugins for ENVI (MCTK, EPOC, VCTK, and Hyperion Tools). It currently supports Level 1A and Level 1B HDF files.
 
 For Level 1A, calibration coefficients are applied to individual bands within a swath (VNIR Nadir, VNIR Backward, SWIR, and TIR), the results are combined into a single cube, and that cube is written out to an ENVI file.That file contains correct band names, wavelengths, and a Rational Polynomial Coefficient (RPC) sensor model to enable orthorectification and, for Band 3N/3B, stereo DEM extraction. It can also correctly align all of the stored bands by taking advantage of available geolocation data and a user-supplied DEM. This does require some interpolation, so you have the option of which method to use.  The end result is a single cube with well-aligned bands, in the original viewing geometry, suitable for analysis and visualization.
 
